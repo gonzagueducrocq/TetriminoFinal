@@ -14,5 +14,13 @@ app.config(function($routeProvider) {
 		.when("/scores", {
 			templateUrl: "./app/components/scores/scores.html",
 			controller: "scoresController"
+		})
+		.when("/faq", {
+			templateUrl: "./app/components/faq/faqs.html",
+			controller: "faqController"
+		})
+		.when("/jouer", {
+			templateUrl: "./app/components/jouer/jouer.html",
+			controller: "jouerController"
 		});
 });

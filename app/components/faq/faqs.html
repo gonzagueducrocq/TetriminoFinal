@@ -1,0 +1,23 @@
+<html>
+  <head>
+  </head>
+
+<body>
+
+    <table>
+      <thead>
+        <td>Questions</td>
+        <td>Reponses</td>
+      </thead>
+
+      <tbody>
+        <tr ng-repeat="faq in faqs | orderBy: '-id'">
+          <td>{{faq.question}}</td>
+          <td>{{faq.reponse}}</td>
+      </tbody>
+
+    </table>
+
+</body>
+
+</html>
