@@ -1,4 +1,4 @@
-var app = angular.module("tpangular", [ 'ngRoute', 'ngResource', 'tetrisModule' ]);
+var app = angular.module("tpAngular", [ 'ngRoute', 'ngResource', 'tetrisModule' ]);
 
 app.constant("API_URL", "http://localhost:8080/tetrimino/api");
 
