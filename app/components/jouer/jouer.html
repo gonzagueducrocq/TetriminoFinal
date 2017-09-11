@@ -1,6 +1,13 @@
-<button ng-click="start()">Commencer</button>
+<button ng-click="GO()" ng-hide="displayChoose || displayBoard">GO!</button>
 
-<div>
+
+  <div ng-show="displayChoose">
+    <button ng-click="SOLO()">SOLO</button>
+    <button ng-click="VS()">VS</button>
+  </div>
+
+
+<div ng-show="displayBoard">
 	<div class="board"></div>
 
 	<div class="score">
