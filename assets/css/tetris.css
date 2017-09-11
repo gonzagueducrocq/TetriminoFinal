@@ -96,6 +96,15 @@
 }
 
 
+.tetrimino.presentation {
+	position: relative;
+	top: inherit;
+	left: inherit;
+	height: 100px;
+	margin-bottom: 25px;
+}
+
+
 
 
 @keyframes removing {
