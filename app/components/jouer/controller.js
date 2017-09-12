@@ -1,10 +1,9 @@
 var app = angular.module("tpAngular");
 
-
-app.controller("jouerController", function($scope, Page, tetrisBoard, ScoresResource, tetrisScore) {
+app.controller("jouerController", function($scope, Page, tetrisBoard, ScoresResource, tetrisScore, userService, partieResource) {
 	Page.setTitle("Jouer");
 
-
+var myPartie = {};
 
 $scope.GO = function() {
   $scope.displayChoose = true;
@@ -38,6 +37,12 @@ $scope.VS = function() {
 		tetrisBoard.start();
 
 		angular.element(tetrisBoard).on('gameOver', this.onGameOver);
+
+			var partie = { joueur1: {
+				id: userService.user.id
+				}
+			}
+				myPartie = partieResource.add(partie);
 	};
 
 
@@ -53,12 +58,12 @@ $scope.VS = function() {
       id:1
     },
     joueur: {
-      id:4
+      id: userService.user.id
     },
     level:tetrisScore.level,
     lines:tetrisScore.lines,
     points: tetrisScore.points
     }
-    ScoresResource.add(tetrisScore);
+    ScoresResource.add(score);
 	}
 });

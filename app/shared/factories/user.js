@@ -1,11 +1,11 @@
 app.factory("userService", function() {
     return {
-        this.user = {
+        user : {
             id: 4
-        };
+        },
 
-        this.isConnected = function() {
+      isConnected : function() {
             return (this.user.id);
-        };
+        }
     }
 });
