@@ -22,5 +22,9 @@ app.config(function($routeProvider) {
 		.when("/jouer", {
 			templateUrl: "./app/components/jouer/jouer.html",
 			controller: "jouerController"
+		})
+		.when("/connexionJoueur", {
+			templateUrl: "./app/components/connexion/connexion.html",
+			controller: "connexionController"
 		});
 });
