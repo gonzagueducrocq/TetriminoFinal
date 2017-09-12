@@ -26,5 +26,13 @@ app.config(function($routeProvider) {
 		.when("/connexionJoueur", {
 			templateUrl: "./app/components/connexion/connexion.html",
 			controller: "connexionController"
+		})
+		.when("/accueil", {
+			templateUrl: "./app/components/accueil/Accueil.html",
+			controller: "accueilController"
+		})
+		.when("/inscription", {
+			templateUrl: "./app/components/inscription/inscription.html",
+			controller: "inscriptionController"
 		});
 });

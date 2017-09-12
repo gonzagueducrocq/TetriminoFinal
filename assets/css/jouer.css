@@ -1,0 +1,32 @@
+.go {
+  	background: #ee6e73;
+    width: 100px;
+    height: 100px;
+    margin-top: 75px;
+    text-align: center;
+    line-height: 100px;
+  	font-family: "Open Sans";
+    font-size: 50px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border-radius: 50%;
+
+}
+
+.go:hover {
+    	background: #ef5350;
+}
+
+.solo {
+
+      margin-top: 75px;
+      margin-right: 25px;
+      float: left;
+}
+
+.vs {
+
+      margin-top: 75px;
+
+  	  float: left;
+}

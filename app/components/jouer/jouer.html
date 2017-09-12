@@ -1,9 +1,12 @@
-<button ng-click="GO()" ng-hide="displayChoose || displayBoard">GO!</button>
 
+
+<div class="go" ng-click="GO()" ng-hide="displayChoose || displayBoard">GO!</div>
 
   <div ng-show="displayChoose">
-    <button ng-click="SOLO()">SOLO</button>
-    <button ng-click="VS()">VS</button>
+    <div class="solo" ng-click="SOLO()"><a class="btn btn-floating pulse red lighten-1">
+      <i class="material-icons">person</i></a></div>
+    <div class="vs" ng-click="VS()"><a class="btn btn-floating pulse red lighten-1">
+      <i class="material-icons">people</i></a></div>
   </div>
 
 
