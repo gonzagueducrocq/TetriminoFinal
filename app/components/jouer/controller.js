@@ -13,7 +13,8 @@ $scope.SOLO = function() {
   $scope.displayBoard = true;
   $scope.displayChoose = false;
 
-  $scope.start();
+	$scope.start();
+
 }
 
 $scope.VS = function() {
@@ -21,6 +22,7 @@ $scope.VS = function() {
   $scope.displayChoose = false;
 
 	$scope.start();
+
 }
 
 
@@ -51,7 +53,7 @@ $scope.VS = function() {
 		alert('Game Over ! (débrouillez-vous ...)');
 
     var score = {partie: {
-      id:1
+      id: myPartie.id
     },
     joueur: {
       id: userService.user.id

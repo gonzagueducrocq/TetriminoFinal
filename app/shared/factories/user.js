@@ -1,7 +1,6 @@
 app.factory("userService", function() {
     return {
         user : {
-            id: 4
         },
 
       isConnected : function() {
