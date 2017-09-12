@@ -13,18 +13,14 @@ $scope.SOLO = function() {
   $scope.displayBoard = true;
   $scope.displayChoose = false;
 
-  tetrisBoard.start();
-
-  angular.element(tetrisBoard).on('gameOver', this.onGameOver);
+  $scope.start();
 }
 
 $scope.VS = function() {
   $scope.displayBoard = true;
   $scope.displayChoose = false;
 
-  tetrisBoard.start();
-
-  angular.element(tetrisBoard).on('gameOver', this.onGameOver);
+	$scope.start();
 }
 
 
