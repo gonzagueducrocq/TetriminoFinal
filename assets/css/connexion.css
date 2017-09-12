@@ -1,0 +1,8 @@
+.button {
+  	background: #ee6e73;
+    font-family: "Open Sans";
+}
+
+.button:hover {
+    background: #ef5350;
+}

@@ -1,5 +1,7 @@
 <div class="tetriminos">
     <div ng-repeat="tetrimino in tetriminos | orderBy: 'nom'" class="tetrimino presentation">
-        <div ng-repeat="bloc in tetrimino.figures[0].blocs" class="bloc" style="background-color: {{ tetrimino.couleur }}; top: {{ bloc.positionY * 25 }}; left: {{ bloc.positionX * 25 }}"></div>
+        <div ng-repeat="bloc in tetrimino.figures[0].blocs" class="bloc"
+        style="background-color: {{ tetrimino.couleur }}; top: {{ bloc.positionY * 25 }}; left: {{ bloc.positionX * 25 }}"></div>
     </div>
+    <div>{{tetrimino.nom}}</div>
 </div>

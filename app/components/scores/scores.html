@@ -5,21 +5,21 @@
 <body>
 
     <table>
-      <thead>
-        <td>Score</td>
+      <thead class="head">
         <td>Id Partie</td>
         <td>Type partie</td>
+        <td>Score</td>
         <td>Username</td>
       </thead>
 
-      <tbody>
+      <tbody class="body">
         <tr ng-repeat="score in scores | orderBy: '-points'">
-          <td>{{score.points}}</td>
           <td>{{score.partie.id}}</td>
           <td>
             <span ng-show="score.partie.joueur2">VS</span>
             <span ng-hide="score.partie.joueur2">Solo</span>
           </td>
+          <td>{{score.points}}</td>
           <td>{{score.joueur.username}}</td>
       </tbody>
 
